@@ -1,0 +1,72 @@
+/* HELPER CLASSES */
+.wpcf7 br {
+	display: none;
+}
+
+.fs-48 {
+	font-size: 48px !important;
+	line-height: 52px !important;
+}
+
+.font-bold {
+	font-weight: bold !important;
+}
+
+.testo-rosso-veradi {
+	color: #db0029 !important;
+}
+
+.sfondo-rosso-veradi {
+	background-color: #db0029 !important;
+}
+
+.testo-grigio-verardi {
+	color: #979797 !important;
+}
+
+.sfondo-grigio-verardi {
+	background-color: #979797 !important;
+}
+
+.testo-nero-verardi {
+	color: #000000 !important;
+}
+
+.sfondo-nero-verardi {
+	background-color: #000000 !important;
+}
+
+/* SEZIONE FOOTER FORM CONTATTO */
+
+.contact-form-section {
+	background: #323232;
+}
+
+.form-control {
+	color: #fff;
+}
+
+.box-telefono {
+	display: flex;
+	align-items: center;
+}
+
+.box-telefono img {
+	margin-right: 20px;
+}
+
+.box-telefono span {
+	font-size: calc(1rem + 0.5vw);
+	font-weight: bold;
+}
+
+.newsletter-section {
+	background-image: url("../images/verardi/Sfondo_rosso_pallini.png");
+	background-repeat: repeat-y;
+	background-position: center;
+	background-size: cover;
+}
+
+.pbmit-footer-main-area {
+	text-align: center;
+}

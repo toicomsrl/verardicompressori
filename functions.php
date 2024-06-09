@@ -1,5 +1,5 @@
 <?php
-//require_once get_template_directory() . '/inc/walker.php';
+require_once get_template_directory() . '/inc/walker.php';
 
 //Aggiunta funzionalità tema
 function verardi_custom_logo_setup()
@@ -19,6 +19,18 @@ function verardi_register_menus()
 {
     register_nav_menus(array(
         'menu_principale' => __('Menu Principale', 'Verardi'),
+        // Add more menu locations if needed
+    ));
+    register_nav_menus(array(
+        'menu_footer_compressori' => __('Menu Footer Compressori', 'Verardi'),
+        // Add more menu locations if needed
+    ));
+    register_nav_menus(array(
+        'menu_footer_essiccatori' => __('Menu Footer Essiccatori', 'Verardi'),
+        // Add more menu locations if needed
+    ));
+    register_nav_menus(array(
+        'menu_footer_altri' => __('Menu Footer Altri prodotti', 'Verardi'),
         // Add more menu locations if needed
     ));
 }
@@ -51,6 +63,8 @@ function verardi_assets()
     wp_enqueue_style('style_base', TEMPPATH . '/assets/css/base.css', false, '1.0', 'all');
     wp_enqueue_style('style_theme_style', TEMPPATH . '/assets/css/style.css', false, '1.0', 'all');
     wp_enqueue_style('style_responsive', TEMPPATH . '/assets/css/responsive.css', false, '1.0', 'all');
+    wp_enqueue_style('style_verardi', TEMPPATH . '/assets/css/verardi.css', false, '1.0', 'all');
+
 
     //Script messi prima della chiusura del body
     wp_enqueue_script('js_jquery', TEMPPATH . '/assets/js/jquery.min.js', array(), false, true);
