@@ -120,6 +120,10 @@
 	background-size: cover;
 }
 
+.container-grigio-testo {
+	background-color: var(--pbmit-light-color);
+}
+
 .testo h2 {
 	font-weight: bold;
 	font-size: calc(3rem + 1.5vw);

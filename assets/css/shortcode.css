@@ -4267,18 +4267,16 @@
 	text-shadow: 5px 5px 8px rgba(3, 37, 30, 0.03);
 }
 .pbmit-element-card-box-style-1 .pbmit-card-box-title h4 {
-	font-size: 30px;
-	line-height: 36px;
+	font-size: 40px;
+	line-height: 46px;
 	margin-bottom: 15px;
 	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 1;
+	/*display: -webkit-box;
+	-webkit-line-clamp: 1;*/
 	-webkit-box-orient: vertical;
 }
 .pbmit-element-card-box-style-1 .pbmit-card-box-desc {
-	color: #666666;
-	overflow: hidden;
-	display: -webkit-box;
+	color: #fff;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
