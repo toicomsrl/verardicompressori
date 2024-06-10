@@ -12,11 +12,11 @@
 	font-weight: bold !important;
 }
 
-.testo-rosso-veradi {
+.testo-rosso-verardi {
 	color: #db0029 !important;
 }
 
-.sfondo-rosso-veradi {
+.sfondo-rosso-verardi {
 	background-color: #db0029 !important;
 }
 
@@ -46,6 +46,10 @@
 	color: #fff;
 }
 
+.form-control:focus {
+	color: #fff !important;
+}
+
 .box-telefono {
 	display: flex;
 	align-items: center;
@@ -69,4 +73,84 @@
 
 .pbmit-footer-main-area {
 	text-align: center;
+}
+
+.pbmit-footer-widget-area {
+	text-align: left;
+}
+
+.footer-menu-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.footer-menu-item span {
+	margin-left: 10px;
+}
+
+/* SETTORI */
+.menu-settore-container {
+	background-color: var(--pbmit-light-color);
+	padding: 5vw 0;
+}
+
+.settore-menu-item {
+	display: block;
+	border-bottom: 1px solid #d8d8d8;
+	margin-inline: 30px;
+}
+
+.settore-menu-item a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-block: 20px;
+}
+
+.settore-menu-item span {
+	color: #000;
+	font-size: 28px;
+}
+
+.container-bianco-testo {
+	background-image: url(../images/verardi/sfondo-bianco-pallini.png);
+	background-repeat: repeat-y;
+	background-position: center center;
+	background-size: cover;
+}
+
+.testo h2 {
+	font-weight: bold;
+	font-size: calc(3rem + 1.5vw);
+	color: #000;
+	line-height: 105%;
+	margin-top: 7vw;
+	margin-bottom: 3vw;
+}
+
+.testo {
+	margin-bottom: 7vw;
+	max-width: 1200px;
+	margin: 0 auto 3vw auto;
+}
+
+.testo ul {
+	list-style-type: none; /* Rimuove i marcatori di lista predefiniti */
+	padding-left: calc(var(--bs-gutter-x) * 0.65);
+	margin-bottom: 25px;
+}
+
+.testo ul li {
+	color: black; /* Imposta il colore del testo dell'elemento di lista a nero */
+	position: relative; /* Permette di posizionare il pseudo-elemento rispetto all'elemento di lista */
+}
+
+.testo ul li::before {
+	content: "•"; /* Crea un marcatore di lista personalizzato */
+	color: red; /* Imposta il colore del marcatore di lista a rosso */
+	position: absolute; /* Posiziona il marcatore di lista rispetto all'elemento di lista */
+	left: -0.8em;
+	top: -8px;
+	font-size: 25px;
 }

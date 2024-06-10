@@ -4,75 +4,118 @@
     <?php get_template_part('template-part/newsletter-subscription'); ?>
     <div class="pbmit-footer-main-area">
         <div class="container">
+            <div class="logo-footer" style="margin-top: 80px; margin-bottom: 50px; text-align: left">
+                <?php
+                if (function_exists('the_custom_logo')) {
+                    the_custom_logo();
+                }
+                ?>
+            </div>
+        </div>
+        <div class="container">
             <div class="pbmit-footer-widget-area">
                 <div class="container">
                     <div class="row g-2">
                         <div class="col-md-3">
                             <div class="widget">
-                                <h2 class="widget-title">Our address</h2>
-                                <div class="pbmit-contact-widget-lines">
-                                    Valentin, Street Road 24, New <br> York, USA - 67452
+                                <ul>
+                                    <li>Via I Maggio Traversa IV 1/3</li>
+                                    <li>25035 Ospitaletto (BS)</li>
+                                    <li>Tel: 030 642841</li>
+                                    <li>Email: info@verardicompressori.it</li>
+                                </ul>
+                                <div class="footer-menu-item" style="margin-top: 50px;">
+                                    <a href="#">
+                                        <span class="font-bold" style="margin-right: 10px; margin-left: 0" ;>Qualità</span>
+                                        <img src=" <?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 pbmit-footer-widget-col-2">
                             <div class="widget">
-                                <h2 class="widget-title">Contact Us</h2>
-                                <div class="pbmit-contact-widget-lines">
-                                    <div class="pbmit-contact-widget-phone">
-                                        +(02) 574 - 328 - 301
-                                    </div>
-                                    <div class="pbmit-contact-widget-email">
-                                        noreply@pbminfotech.com
-                                    </div>
+                                <h2 class="widget-title">Compressori</h2>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Compressori industriali</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Compressori a vite Elgi</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Compressori oil-free Elgi</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Compressori aria a Brescia</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Compressori aria a Beramo</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="widget">
-                                <h2 class="widget-title">Our Social</h2>
-                                <div class="textwidget">
-                                    <ul class="pbmit-social-links">
-                                        <li class="pbmit-social-li pbmit-social-facebook">
-                                            <a title="Facebook" href="#" target="_blank" rel="noopener">
-                                                <span><i class="pbmit-base-icon-facebook-squared"></i></span>
-                                            </a>
-                                        </li>
-                                        <li class="pbmit-social-li pbmit-social-twitter">
-                                            <a title="Twitter" href="#" target="_blank" rel="noopener">
-                                                <span><i class="pbmit-base-icon-twitter"></i></span>
-                                            </a>
-                                        </li>
-                                        <li class="pbmit-social-li pbmit-social-instagram">
-                                            <a title="Instagram" href="#" target="_blank" rel="noopener">
-                                                <span><i class="pbmit-base-icon-instagram"></i></span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <h2 class="widget-title">Essiccatori</h2>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Essiccatori ad adsorbimento</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Essiccatori a refrigerazione</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="widget">
-                                <h2 class="widget-title">Our Social</h2>
-                                <div class="textwidget">
-                                    <ul class="pbmit-social-links">
-                                        <li class="pbmit-social-li pbmit-social-facebook">
-                                            <a title="Facebook" href="#" target="_blank" rel="noopener">
-                                                <span><i class="pbmit-base-icon-facebook-squared"></i></span>
-                                            </a>
-                                        </li>
-                                        <li class="pbmit-social-li pbmit-social-twitter">
-                                            <a title="Twitter" href="#" target="_blank" rel="noopener">
-                                                <span><i class="pbmit-base-icon-twitter"></i></span>
-                                            </a>
-                                        </li>
-                                        <li class="pbmit-social-li pbmit-social-instagram">
-                                            <a title="Instagram" href="#" target="_blank" rel="noopener">
-                                                <span><i class="pbmit-base-icon-instagram"></i></span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <h2 class="widget-title">Altri prodotti</h2>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Serbatoi aria compressa</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Trattamento aria e condensa</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Filtrazione aria compressa</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Separatori acqua e olio</span>
+                                    </a>
+                                </div>
+                                <div class="footer-menu-item">
+                                    <a href="#">
+                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
+                                        <span>Strumenti di misurazione</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

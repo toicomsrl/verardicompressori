@@ -8,7 +8,7 @@
     <title><?php wp_title(' | ', true, 'right'); ?></title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/fevicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
     <?php wp_head() ?>
 </head>
@@ -43,7 +43,11 @@
                             <div class="site-branding">
                                 <h1 class="site-title">
                                     <a href="index.html">
-                                        <img class="logo-img" src="<?php echo TEMPPATH; ?>/assets/images/white-logo.svg" alt="Capigo">
+                                        <?php
+                                        if (function_exists('the_custom_logo')) {
+                                            the_custom_logo();
+                                        }
+                                        ?>
                                         <img class="pbmit-responsive-logo" src="<?php echo TEMPPATH; ?>/assets/images/dark-logo.svg" alt="Capigo">
                                     </a>
                                 </h1>
@@ -70,15 +74,12 @@
                                     </nav>
                                 </div>
                                 <div class="pbmit-right-box d-flex align-items-center">
-                                    <div class="pbmit-header-search-btn">
-                                        <a href="#"><i class=" pbmit-base-icon-search-1"></i></a>
-                                    </div>
                                     <div class="pbmit-button-box">
                                         <div class="pbmit-header-button">
                                             <div class="pbmit-svg-btn pbmit-ihbox-btn">
-                                                <a href="contact-us.html" class="pbmit-btn pbmit-btn-outline">
+                                                <a href="/contatti" class="pbmit-btn pbmit-btn-outline">
                                                     <span class="pbmit-header-button-text">
-                                                        Get In Touch
+                                                        CONTATTI
                                                         <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19" viewBox="0 0 19 19" xml:space="preserve">
                                                             <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
                                                             <line x1="1.2" y1="1" x2="18" y2="1"></line>
@@ -95,7 +96,3 @@
                     </div>
                 </div>
             </div>
-
-            <?php
-            get_template_part('template-part/slider-home');
-            ?>

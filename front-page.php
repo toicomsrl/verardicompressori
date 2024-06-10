@@ -1,4 +1,8 @@
 <?php get_header() ?>
+
+<?php
+get_template_part('template-part/slider-home');
+?>
 <!-- page content -->
 <div class="page-content">
 
