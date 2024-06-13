@@ -35,7 +35,7 @@ get_template_part('template-part/hero-settori');
 
         <?php } ?>
 
-        <div class="container-bianco-testo">
+        <section class="section-lgx container-bianco-testo">
             <div class="container">
                 <div class="row testo">
                     <div class="col-12">
@@ -43,9 +43,6 @@ get_template_part('template-part/hero-settori');
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-    </div>
-
-    <?php get_footer() ?>
+        <?php get_footer() ?>

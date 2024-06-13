@@ -3598,6 +3598,7 @@
 	position: relative;
 	padding: 315px 0 170px 0;
 	background: linear-gradient(90deg, rgba(0, 12, 8, 0.87) 0%, rgba(5, 25, 18, 0.19) 78%, rgba(5, 25, 18, 0) 100%);
+	height: 100%;
 }
 .pbmit-slider-area .pbmit-slider-bg {
 	position: absolute;
@@ -3612,6 +3613,9 @@
 }
 .pbmit-slider-one .pbmit-slider-item {
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .pbmit-slider-one .pbmit-slider-content {
 	overflow: hidden;
@@ -3625,8 +3629,8 @@
 	line-height: 130px;
 }
 .pbmit-slider-one .pbmit-slider-item .pbmit-title {
-	font-size: 100px;
-	line-height: 120px;
+	font-size: 72px;
+	line-height: 120%;
 	font-weight: 500;
 	color: var(--pbmit-white-color);
 }
@@ -4049,7 +4053,7 @@
 	padding: 65px;
 	z-index: 1;
 	text-align: center;
-	background-color: var(--pbmit-light-color);
+	background-color: var(--pbmit-global-color);
 }
 .pbminfotech-ele-ptable-style-1 .pbmit-pricing-table-featured-col .pbmit-pricing-table-box {
 	background: var(--pbmit-white-color);

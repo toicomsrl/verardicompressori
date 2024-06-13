@@ -32,7 +32,7 @@ INDEX:
 	/*--pbmit-body-typography-font-family: "DM Sans", sans-serif;*/
 	--pbmit-body-typography-font-family: "Schibsted Grotesk", sans-serif;
 	--pbmit-body-typography-variant: regular;
-	--pbmit-body-typography-font-size: 16px;
+	--pbmit-body-typography-font-size: 18px;
 	--pbmit-body-typography-line-height: 1.6;
 	--pbmit-body-typography-color: #323232;
 	/*--pbmit-heading-typography-font-family: "Wix Madefor Display", sans-serif;*/
@@ -362,19 +362,19 @@ a.link-btn i,
 	background-color: var(--pbmit-blackish-color);
 }
 .pbmit-btn-outline {
-	border: 2px solid var(--pbmit-white-color);
+	border: 2px solid var(--pbmit-global-color);
 	background-color: transparent !important;
+	color: var(--pbmit-global-color);
 }
 .pbmit-btn-outline .pbmit-svg-arrow line {
-	stroke: var(--pbmit-white-color);
+	stroke: var(--pbmit-global-color);
 }
 .pbmit-btn-outline:hover {
-	color: var(--pbmit-blackish-color);
-	border-color: var(--pbmit-white-color);
-	background-color: var(--pbmit-white-color) !important;
+	color: var(--pbmit-white-color);
+	background-color: var(--pbmit-global-color) !important;
 }
 .pbmit-btn-outline:hover .pbmit-svg-arrow line {
-	stroke: var(--pbmit-blackish-color);
+	stroke: var(--pbmit-white-color);
 }
 .pbmit-btn.pbmit-btn-white {
 	padding: 13px 30px;

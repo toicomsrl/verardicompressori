@@ -24,9 +24,6 @@
                     <div class="container-fluid">
                         <div class="d-flex justify-content-between">
                             <div class="pbmit-pre-header-left">
-                                <ul class="pbmit-contact-info">
-                                    <li><i class="pbmit-base-icon-placeholder"></i>Los Angeles Gournadi, 1230 Bariasl</li>
-                                </ul>
                             </div>
                             <div class="pbmit-pre-header-right">
                                 <ul class="pbmit-contact-info">
@@ -46,9 +43,7 @@
                                         <?php
                                         if (function_exists('the_custom_logo')) {
                                             the_custom_logo();
-                                        }
-                                        ?>
-                                        <img class="pbmit-responsive-logo" src="<?php echo TEMPPATH; ?>/assets/images/dark-logo.svg" alt="Capigo">
+                                        } ?>
                                     </a>
                                 </h1>
                             </div>

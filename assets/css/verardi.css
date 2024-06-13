@@ -3,6 +3,11 @@
 	display: none;
 }
 
+.fs-28 {
+	font-size: 28px !important;
+	line-height: 40px !important;
+}
+
 .fs-48 {
 	font-size: 48px !important;
 	line-height: 52px !important;
@@ -34,6 +39,31 @@
 
 .sfondo-nero-verardi {
 	background-color: #000000 !important;
+}
+
+.testo-sinistra {
+	text-align: left !important;
+}
+
+/* HOME PAGE */
+.pbmit-slider-bg {
+	position: relative;
+	overflow: hidden;
+}
+
+.swiper-wrapper-home {
+	height: 100dvh;
+}
+
+.pbmit-slider-bg video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	transform: translate(-50%, -50%);
 }
 
 /* SEZIONE FOOTER FORM CONTATTO */
@@ -89,6 +119,16 @@
 	margin-left: 10px;
 }
 
+/* PAGINA ASSISTENZA */
+.assistenza-sezione-icone {
+	background-color: var(--pbmit-global-color);
+	color: var(--pbmit-white-color);
+}
+
+.bordo-destra:not(:last-child) {
+	border-right: 1px solid #979797;
+}
+
 /* SETTORI */
 .menu-settore-container {
 	background-color: var(--pbmit-light-color);
@@ -126,17 +166,15 @@
 
 .testo h2 {
 	font-weight: bold;
-	font-size: calc(3rem + 1.5vw);
+	font-size: calc(2rem + 1.5vw);
 	color: #000;
 	line-height: 105%;
-	margin-top: 7vw;
 	margin-bottom: 3vw;
 }
 
 .testo {
-	margin-bottom: 7vw;
 	max-width: 1200px;
-	margin: 0 auto 3vw auto;
+	margin: 0 auto 0 auto;
 }
 
 .testo ul {
