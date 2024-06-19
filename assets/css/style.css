@@ -24,7 +24,7 @@
 	margin-right: 70px;
 }
 .fid-style-7-area .pbminfotech-ele-fid-style-7:not(:first-child) {
-	border-top: 1px solid #1111121a;
+	border-top: 1px solid var(--pbmit-secondary-color);
 	margin-top: 30px;
 	padding-top: 40px;
 }

@@ -8,6 +8,12 @@ $secondaScrittaCheScorre = get_field('home_seconda_scritta_che_scorre');
 $titoloSlider = get_field('home_titolo_slider_orizzontale');
 $testoSlider = get_field('home_testo_slider_orizzontale');
 $slides = get_field('home_slides');
+$dati = get_field('home_dati');
+$titoloSezioneDati = get_field('home_titolo_sezione_dati');
+$testoSezioneDati = get_field('home_testo_sezione_dati');
+$immagineSezioneDati = get_field('home_immagine_sezione_dati');
+$testoBottoneSezioneDati = get_field('home_testo_bottone_sezione_dati');
+$linkBottoneSezioneDati = get_field('home_link_bottone_sezione_dati');
 ?>
 
 <!-- VIDEO HERO -->
@@ -72,6 +78,65 @@ $slides = get_field('home_slides');
     set_query_var('scritta_che_scorre', $primaScrittaCheScorre);
     get_template_part('template-part/rolling-text') ?>
     <!-- SCRITTA CHE CORRE END -->
+
+    <!-- SEZIONE DATI START -->
+    <?php if (!empty($dati)) { ?>
+        <section class="section-lgx pbmit-bg-color-blackish">
+            <div class="container">
+                <div class="row align-items-center g-0">
+                    <div class="col-md-3 col-xl-2">
+                        <div class="fid-style-7-area">
+                            <?php foreach ($dati as $dato) { ?>
+                                <div class="pbminfotech-ele-fid-style-7">
+                                    <div class="pbmit-fld-contents">
+                                        <h3 class="pbmit-fid-title"><?php echo $dato['titolo_dato']; ?></h3>
+                                        <h4 class="pbmit-fid-inner">
+                                            <span class="pbmit-fid"></span>
+                                            <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="300" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style=""><?php echo $dato['numero_dato']; ?></span>
+                                            <span class="pbmit-fid"><span>+</span></span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-xl-5">
+                        <img src="<?php echo $immagineSezioneDati; ?>" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-12 col-xl-5">
+                        <div class="about-us-one-content">
+                            <div class="pbmit-heading-subheading">
+                                <h2 class="pbmit-title fs-40"><?php echo $titoloSezioneDati; ?></h2>
+                            </div>
+                            <div class="pbmit-ihbox-style-9">
+                                <div class="pbmit-ihbox-wapper" style="margin-bottom: 4rem">
+                                    <div class="pbmit-ihbox-wapper-inner">
+                                        <div class="pbmit-heading-desc"><?php echo $testoSezioneDati; ?></div>
+                                    </div>
+                                </div>
+                                <a href="<?php echo $linkBottoneSezioneDati; ?>">
+                                    <button type=" submit" class="pbmit-btn pbmit-btn-shape-round">
+                                        <i class="form-btn-loader fa fa-circle-o-notch fa-spin fa-fw margin-bottom d-none"></i>
+                                        <span class="pbmit-button-content-wrapper">
+                                            <span class="pbmit-button-icon pbmit-align-icon-right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="pbmit-svg-arrow" x="0px" y="0px" width="10" height="19" viewBox="0 0 19 19" xml:space="preserve">
+                                                    <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
+                                                    <line x1="1.2" y1="1" x2="18" y2="1"></line>
+                                                    <line x1="18" y1="17.8" x2="18" y2="1"></line>
+                                                </svg>
+                                            </span>
+                                            <span class="pbmit-button-text"><?php echo $testoBottoneSezioneDati; ?></span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php } ?>
+    <!-- SEZIONE DATI END -->
 
     <!-- SLIDER ORIZZONTALE -->
     <?php if (!empty($slides)) { ?>

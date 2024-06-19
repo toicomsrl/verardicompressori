@@ -36,7 +36,7 @@
 /*----------------------------------------*/
 .pbmit-subheading,
 .pbmit-heading-subheading {
-	margin-bottom: 50px;
+	margin-bottom: 1rem;
 }
 .pbmit-subheading .pbmit-subtitle,
 .pbmit-heading-subheading .pbmit-subtitle {
@@ -968,6 +968,7 @@
 }
 .pbmit-ihbox-style-9 .pbmit-heading-desc {
 	padding-top: 18px;
+	color: var(--pbmit-secondary-color);
 }
 .pbmit-ihbox-style-9 .pbmit-ihbox-btn {
 	padding-top: 35px;
@@ -1708,7 +1709,7 @@
 	letter-spacing: 1.2px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: rgba(3, 37, 30, 0.6);
+	color: var(--pbmit-secondary-color);
 }
 .pbminfotech-ele-fid-style-7 .pbmit-fid-inner .pbmit-fid sup,
 .pbminfotech-ele-fid-style-7 .pbmit-fid-inner .pbmit-fid sub {
@@ -3918,14 +3919,15 @@
 	position: relative;
 }
 .pbmit-marquee-effect-style-1 .pbmit-tag-wrapper::after {
-	content: "\e88f";
+	content: "\\";
 	font-family: "pbminfotech-base-icons";
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: -70px;
 	display: inline-block;
-	font-size: 35px;
-	line-height: 35px;
+	font-size: 150px;
+	line-height: 150px;
+	font-weight: bold;
 	-webkit-transform: translateX(0%) translateY(-50%);
 	-ms-transform: translateX(0%) translateY(-50%);
 	transform: translateX(0%) translateY(-50%);

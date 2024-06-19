@@ -1,4 +1,4 @@
-<section class="section-lgx contact-form-section">
+<section class="section-lgx contact-form-section" id="form-info">
     <div class="container">
         <div class="row g-0">
             <div class="col-md-4 contact-us-col1">

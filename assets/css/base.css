@@ -20,7 +20,7 @@ INDEX:
 
 :root {
 	--pbmit-global-color: #db0029;
-	--pbmit-secondary-color: #989898;
+	--pbmit-secondary-color: #979797;
 	--pbmit-light-color: #f5f5f5;
 	--pbmit-white-color: #ffffff;
 	--pbmit-blackish-color: #323232;
@@ -366,9 +366,19 @@ a.link-btn i,
 	background-color: transparent !important;
 	color: var(--pbmit-global-color);
 }
+.pbmit-header-button .pbmit-btn-outline {
+	border: 2px solid var(--pbmit-white-color);
+	color: var(--pbmit-white-color);
+}
+
 .pbmit-btn-outline .pbmit-svg-arrow line {
 	stroke: var(--pbmit-global-color);
 }
+
+.pbmit-header-button .pbmit-btn-outline .pbmit-svg-arrow line {
+	stroke: var(--pbmit-white-color);
+}
+
 .pbmit-btn-outline:hover {
 	color: var(--pbmit-white-color);
 	background-color: var(--pbmit-global-color) !important;
