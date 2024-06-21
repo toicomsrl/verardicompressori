@@ -6,6 +6,7 @@ $primoSottotitolo = get_field('assistenza_primo_sottotitolo');
 $primoTesto = get_field('assistenza_primo_testo');
 $secondoSottotitolo = get_field('assistenza_secondo_sottotitolo');
 $secondoTesto = get_field('assistenza_secondo_testo');
+$immagineSlides = get_field('assistenza_immagine_slides');
 $slides = get_field('assistenza_slides');
 $blocchiIcone = get_field('assistenza_blocco_con_icone');
 $scrittaCheScorre = get_field('assistenza_scritta_che_scorre');
@@ -33,38 +34,76 @@ $scrittaCheScorre = get_field('assistenza_scritta_che_scorre');
     </div>
 </section>
 
-<!-- SLIDE CHE SI SOVRAPPONGONO -->
+<!-- Split-Slide Start -->
 <?php if (!empty($slides)) { ?>
-
-    <section class="section-xl" data-cursor="global-color" style="background-color: #323232;">
-        <div class="container" style="background-color: #323232;">
-            <div class=" pbmit-element-card-box-style-1">
-                <div class="pbmit-content-box">
-                    <?php foreach ($slides as $slide) { ?>
-                        <div class="pbmit-card-box-wrapper">
-                            <div class="pbmit-card-box-wrapper-inner d-flex align-items-center justify-content-between">
-                                <div class="pbmit-card-box-img col-lg-6 col-md-12">
-                                    <div class="pbmit-card-box-item-image">
-                                        <img src="<?php echo $slide['immagine_slide']; ?>" alt="Answer a Few Questions">
+    <section class="section-lg pbmit-bg-color-blackish split-slide-section">
+        <div class="container">
+            <div class="pbmit-element-split-slide-style-1">
+                <div class="pbmit-heading-subheading animation-style2">
+                    <h4 class="pbmit-subtitle"></h4>
+                    <h2 class="pbmit-title"></h2>
+                </div>
+                <div class="pbmit-element-split-slide-wrapper">
+                    <div class="pbmit-bg-imgbox d-flex">
+                        <div class="col-md-6 pbmit-img">
+                            <div class="pbmit-img-box">
+                                <img src="<?php echo $immagineSlides; ?>" class="img-fluid" alt="">
+                            </div>
+                            <div class="pbmit-item-image-wrap">
+                                <div class="pbmit-split-slide-item-image active">
+                                    <div class="pbmit-image-wrap">
+                                        <img src="" alt="">
                                     </div>
                                 </div>
-                                <div class="pbmit-card-box col-lg-6 col-md-12">
-                                    <div class="pbmit-card-box-title">
-                                        <h4><?php echo $slide['titolo_slide']; ?></h4>
+                                <div class="pbmit-split-slide-item-image">
+                                    <div class="pbmit-image-wrap">
+                                        <img src="" alt="">
                                     </div>
-                                    <hr class="pbmit-card-box-divider" style="margin-block: 30px; color: #979797">
-                                    <div class=" pbmit-card-box-desc"><?php echo $slide['sottotitolo_slide']; ?>
+                                </div>
+                                <div class="pbmit-split-slide-item-image">
+                                    <div class="pbmit-image-wrap">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="pbmit-split-slide-item-image">
+                                    <div class="pbmit-image-wrap">
+                                        <img src="" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    <?php } ?>
+                        <div class="col-md-6 pbmit-contentbox">
+                            <?php
+                            $numSlide = 1;
+                            foreach ($slides as $slide) {
+                            ?>
+                                <div class="pbmit-split-slide-wrapper">
+                                    <div class="pbmit-split-slide-box">
+                                        <div class="pbmit-split-responsive-image">
+                                            <div class="pbmit-split-slide-item-image">
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="pbmit-split-slide-number">
+                                            <h4><?php echo "0" . $numSlide; ?></h4>
+                                        </div>
+                                        <div class="pbmit-split-slide-title">
+                                            <h4><?php echo $slide['titolo_slide']; ?></h4>
+                                        </div>
+                                        <div class="pbmit-split-slide-desc"><?php echo $slide['sottotitolo_slide']; ?></div>
+                                    </div>
+                                </div>
+                            <?php
+                                $numSlide++;
+                            } ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 <?php } ?>
-<!-- FINE SLIDE CHE SI SOVRAPPONGONO -->
+<!-- Split-Slide End -->
 
 <!-- INIZIO BLOCCO CON ICONE -->
 <?php if (!empty($blocchiIcone)) { ?>
@@ -117,8 +156,8 @@ $scrittaCheScorre = get_field('assistenza_scritta_che_scorre');
 <?php
 set_query_var('scritta_che_scorre', $scrittaCheScorre);
 get_template_part('template-part/rolling-text') ?>
-
-
 <!-- SCRITTA CHE CORRE END -->
+
+
 
 <?php get_footer() ?>

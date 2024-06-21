@@ -359,7 +359,7 @@ a.link-btn i,
 }
 .pbmit-btn:hover {
 	color: var(--pbmit-white-color);
-	background-color: var(--pbmit-blackish-color);
+	background-color: #232323;
 }
 .pbmit-btn-outline {
 	border: 2px solid var(--pbmit-global-color);
@@ -369,6 +369,10 @@ a.link-btn i,
 .pbmit-header-button .pbmit-btn-outline {
 	border: 2px solid var(--pbmit-white-color);
 	color: var(--pbmit-white-color);
+}
+
+.pbmit-header-button .pbmit-btn-outline:hover {
+	border: 2px solid var(--pbmit-global-color);
 }
 
 .pbmit-btn-outline .pbmit-svg-arrow line {

@@ -567,7 +567,7 @@
 	display: inline-flex;
 	align-items: flex-start;
 	padding-top: 30px;
-	border-top: 2px solid var(--pbmit-secondary-color);
+	/*border-top: 2px solid var(--pbmit-secondary-color);*/
 }
 .pbmit-bg-color-secondary .pbmit-ihbox-style-5 .pbmit-heading-desc {
 	color: rgba(255, 255, 255, 0.7);
