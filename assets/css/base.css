@@ -376,7 +376,7 @@ a.link-btn i,
 }
 
 .pbmit-btn-outline .pbmit-svg-arrow line {
-	stroke: var(--pbmit-global-color);
+	stroke: var(--pbmit-white-color);
 }
 
 .pbmit-header-button .pbmit-btn-outline .pbmit-svg-arrow line {

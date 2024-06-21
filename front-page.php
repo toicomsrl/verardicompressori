@@ -167,12 +167,34 @@ $linkBottoneSezioneDati = get_field('home_link_bottone_sezione_dati');
                                                 </div>
                                             </div>
                                             <div class="pbminfotech-box-content">
-                                                <h3 class="pbmit-service-title">
-                                                    <a href="<?php echo $slide['pagina_destinazione']; ?>" style="color: #FFF"><?php echo $slide['titolo_slide']; ?>
-                                                        <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/freccia-su-nel-cerchio.png" width="46px" style="margin-left: 40px">
-                                                    </a>
-
-                                                </h3>
+                                                <div class="pbmit-ihbox-style-5">
+                                                    <div class="pbmit-ihbox-contents">
+                                                        <h2 class="pbmit-element-title">
+                                                            <a href="<?php echo $slide['pagina_destinazione']; ?>">
+                                                                <span class="pbmit-service-title titolo-slide-home">
+                                                                    <?php echo $slide['titolo_slide']; ?>
+                                                                    <svg class=" pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19" viewBox="0 0 19 19" xml:space="preserve">
+                                                                        <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
+                                                                        <line x1="1.2" y1="1" x2="18" y2="1"></line>
+                                                                        <line x1="18" y1="17.8" x2="18" y2="1"></line>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </h2>
+                                                        <div class="pbmit-ihbox-btn">
+                                                            <a href="<?php echo $slide['pagina_destinazione']; ?>">
+                                                                <span>
+                                                                    <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19" viewBox="0 0 19 19" xml:space="preserve">
+                                                                        <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
+                                                                        <line x1="1.2" y1="1" x2="18" y2="1"></line>
+                                                                        <line x1="18" y1="17.8" x2="18" y2="1"></line>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pbmit-ihbox-wapper"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

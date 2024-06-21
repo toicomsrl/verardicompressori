@@ -98,6 +98,16 @@
 	transform: translate(-50%, -50%);
 }
 
+.titolo-slide-home {
+	color: var(--pbmit-white-color);
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.titolo-slide-home:hover {
+	color: #232323;
+}
+
 /* SEZIONE FOOTER FORM CONTATTO */
 
 .contact-form-section {
@@ -219,9 +229,6 @@ h3.sottotitolo-prodotti {
 }
 
 .settore-menu-item a {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	padding-block: 20px;
 }
 
