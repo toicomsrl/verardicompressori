@@ -1,6 +1,12 @@
 <!-- footer -->
 <footer class="site-footer pbmit-text-color-white">
-    <?php get_template_part('template-part/contact-form'); ?>
+    <?php
+    if (is_page('lavora-con-noi')) {
+        get_template_part('template-part/candidatura-form');
+    } else {
+        get_template_part('template-part/contact-form');
+    }
+    ?>
     <?php get_template_part('template-part/newsletter-subscription'); ?>
     <div class="pbmit-footer-main-area">
         <div class="container">

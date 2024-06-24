@@ -22,15 +22,7 @@ function verardi_register_menus()
         // Add more menu locations if needed
     ));
     register_nav_menus(array(
-        'menu_footer_compressori' => __('Menu Footer Compressori', 'Verardi'),
-        // Add more menu locations if needed
-    ));
-    register_nav_menus(array(
-        'menu_footer_essiccatori' => __('Menu Footer Essiccatori', 'Verardi'),
-        // Add more menu locations if needed
-    ));
-    register_nav_menus(array(
-        'menu_footer_altri' => __('Menu Footer Altri prodotti', 'Verardi'),
+        'menu_secondario' => __('Menu Secondario', 'Verardi'),
         // Add more menu locations if needed
     ));
 }

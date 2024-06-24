@@ -1,22 +1,34 @@
-<?php /*Template Name: Pagina Settore */ ?>
-
-
 <?php get_header() ?>
 
 <?php
-get_template_part('template-part/hero-settori');
+
+get_template_part('template-part/hero-prodotti');
+$items = get_field('prodotto_link_menu_interno');
+$sottotitoloIntroduttivo = get_field('monitoraggio_sottotitolo_introduttivo');
+$boxes = get_field('monitoraggio_boxes');
 ?>
 
 <div class="page-content">
     <div class="site-content ">
+        <div class="immagine-prodotti-container<?php if (empty($items)) {
+                                                    echo " pb-5";
+                                                } ?>">
+            <div class="container">
+                <div class="row justify-content-center pt-5 pb-5">
+                    <h1 class="prodotti-titolo fs-72"><?php the_title(); ?></h1>
+                </div>
+                <div class="row justify-content-center">
+                    <img src="<?php echo get_field('prodotto_immagine'); ?>" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
 
         <?php
-        $items = get_field('settori_link_menu_interno');
 
         if (!empty($items)) {
         ?>
-
-            <div class="menu-settore-container">
+            <div class="menu-prodotti-container">
                 <div class="container">
                     <div class="row">
                         <?php foreach ($items as $item) { ?>
@@ -60,6 +72,38 @@ get_template_part('template-part/hero-settori');
 
         <?php } ?>
 
+
+        <!-- INIZIO BLOCCO CON ICONE -->
+        <?php if (!empty($boxes)) { ?>
+            <section class="section-lgx">
+                <div class="container">
+                    <?php echo $sottotitoloIntroduttivo; ?>
+                </div>
+            </section>
+            <section class="section-lgx monitoraggio-sezione-icone">
+                <div class="container">
+                    <div class="pbminfotech-ele-ptable-style-1">
+                        <div class="row">
+                            <?php foreach ($boxes as $box) { ?>
+                                <div class="pbmit-ptable-col col-lg-4 col-md-6 bordo-destra">
+                                    <div class="pbmit-pricing-table-box testo-sinistra">
+                                        <div class="pbminfotech-ptable-price-w mb-5">
+                                            <img src="<?php echo $box['icona']; ?>" alt="">
+                                        </div>
+                                        <div class="mt-5">
+                                            <p><?php echo $box['testo']; ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php } ?>
+        <!-- FINE BLOCK CON ICONE -->
+
+
         <section class="section-lgx container-bianco-testo">
             <div class="container">
                 <div class="row testo">
@@ -69,5 +113,8 @@ get_template_part('template-part/hero-settori');
                 </div>
             </div>
         </section>
+    </div>
+</div>
 
-        <?php get_footer() ?>
+
+<?php get_footer() ?>

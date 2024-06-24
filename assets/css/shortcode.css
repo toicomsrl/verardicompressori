@@ -110,7 +110,7 @@
 .pbmit-blog-style-3 .pbmit-svg-btn a svg line,
 .pbmit-btn svg line {
 	fill: none;
-	stroke: var(--pbmit-white-color);
+	stroke: var(--pbmit-blackish-color);
 	stroke-width: 2;
 	stroke-miterlimit: 10;
 }

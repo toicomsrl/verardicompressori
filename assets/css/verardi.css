@@ -69,12 +69,25 @@
 	color: #000000 !important;
 }
 
+.testo-bianco-verardi {
+	color: #ffffff !important;
+}
+
 .sfondo-nero-verardi {
 	background-color: #000000 !important;
 }
 
 .testo-sinistra {
 	text-align: left !important;
+}
+/* MENU SECONDARIO */
+
+.pbmit-contact-info ul li a {
+	color: var(--pbmit-white-color);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 1px;
 }
 
 /* HOME PAGE */
@@ -106,6 +119,10 @@
 
 .titolo-slide-home:hover {
 	color: #232323;
+}
+
+.pbmit-svg-arrow-home line {
+	stroke: var(--pbmit-white-color) !important;
 }
 
 /* SEZIONE FOOTER FORM CONTATTO */
@@ -162,12 +179,13 @@
 }
 
 /* PAGINA ASSISTENZA */
-.assistenza-sezione-icone {
+.assistenza-sezione-icone,
+.monitoraggio-sezione-icone {
 	background-color: var(--pbmit-global-color);
 	color: var(--pbmit-white-color);
 }
 
-.bordo-destra:not(:last-child) {
+.bordo-destra:not(:nth-child(3n)) {
 	border-right: 1px solid #979797;
 }
 
@@ -262,6 +280,7 @@ h3.sottotitolo-prodotti {
 
 .testo h3 {
 	margin-bottom: 2vw;
+	color: #000;
 }
 
 .testo {
