@@ -49,6 +49,10 @@
 	font-weight: bold !important;
 }
 
+.font-uppercase {
+	text-transform: uppercase !important;
+}
+
 .testo-rosso-verardi {
 	color: #db0029 !important;
 }
@@ -190,7 +194,15 @@
 }
 
 .bordo-destra:not(:nth-child(3n)) {
+	border-bottom: none;
 	border-right: 1px solid #979797;
+}
+
+@media only screen and (max-width: 991px) {
+	.bordo-destra:not(:nth-child(3n)) {
+		border-right: none;
+		border-bottom: 1px solid #979797;
+	}
 }
 
 /* PRODOTTI */

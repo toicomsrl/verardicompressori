@@ -14,6 +14,8 @@ $testoSezioneDati = get_field('home_testo_sezione_dati');
 $immagineSezioneDati = get_field('home_immagine_sezione_dati');
 $testoBottoneSezioneDati = get_field('home_testo_bottone_sezione_dati');
 $linkBottoneSezioneDati = get_field('home_link_bottone_sezione_dati');
+$loghiClienti = get_field('home_loghi_clienti');
+$loghiRivenditoriUfficiali = get_field('home_rivenditori_ufficiali');
 ?>
 
 <!-- VIDEO HERO -->
@@ -56,7 +58,7 @@ $linkBottoneSezioneDati = get_field('home_link_bottone_sezione_dati');
                     <p><?php echo $primoTesto ?></p>
                 </div>
                 <div class="col-12">
-                    <a class="pbmit-btn pbmit-btn-outline" href="/chi-siamo/">
+                    <a class="pbmit-btn pbmit-btn-outline" href="<?php echo HOME; ?>/chi-siamo/">
                         <span class="pbmit-button-content-wrapper">
                             <span class="pbmit-button-icon pbmit-align-icon-right" style="color: #db0029">
                                 <svg xmlns=" http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="pbmit-svg-arrow" x="0px" y="0px" width="10" height="19" viewBox="0 0 19 19" xml:space="preserve">
@@ -92,7 +94,7 @@ $linkBottoneSezioneDati = get_field('home_link_bottone_sezione_dati');
                                         <h3 class="pbmit-fid-title"><?php echo $dato['titolo_dato']; ?></h3>
                                         <h4 class="pbmit-fid-inner">
                                             <span class="pbmit-fid"></span>
-                                            <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="300" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style=""><?php echo $dato['numero_dato']; ?></span>
+                                            <span class="pbmit-number-rotate numinate" data-appear-animation="animateDigits" data-from="0" data-to="<?php echo $dato['valore_dato']; ?>" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style=""><?php echo $dato['valore_dato']; ?></span>
                                             <span class="pbmit-fid"><span>+</span></span>
                                         </h4>
                                     </div>
@@ -208,11 +210,77 @@ $linkBottoneSezioneDati = get_field('home_link_bottone_sezione_dati');
     <?php } ?>
     <!-- SLIDER ORIZZONTALE END -->
 
+    <!-- SEZIONE RIVENDITORI UFFICIALI -->
+    <?php if (!empty($loghiRivenditoriUfficiali)) { ?>
+        <section class="section-lgx">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-12">
+                        <div class="pbmit-heading-subheading text-center">
+                            <h2 class="pbmit-title font-bold fs-48 testo-nero-verardi">Siamo rivenditori ufficiali di</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slider" data-arrows-class="team-three-arrow" data-loop="false" data-autoplay="false" data-dots="false" data-arrows="false" data-columns="4" data-margin="30" data-effect="slide">
+                    <div class="swiper-wrapper">
+                        <!-- Slide1 -->
+                        <?php foreach ($loghiRivenditoriUfficiali as $logo) { ?>
+                            <article class="pbmit-team-style-2 swiper-slide">
+                                <div class="pbminfotech-post-item">
+                                    <div class="pbminfotech-box-content">
+                                        <div class="pbmit-featured-img-wrapper">
+                                            <div class="pbmit-featured-wrapper" style="padding-bottom: 0">
+                                                <img src="<?php echo $logo['logo']; ?>" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <hr style="margin-bottom: 50px">
+                                        <div class="pbmit-team-title-wapper">
+                                            <h3 class="pbmit-team-title font-uppercase font-bold testo-nero-verardi text-center">
+                                                <?php echo $logo['titolo']; ?>
+                                            </h3>
+                                            <p class="text-center"><?php echo $logo['sottotitolo']; ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php } ?>
+    <!-- SEZIONE RIVENDITORI UFFICIALI END -->
+
     <!-- SCRITTA CHE SCORRE -->
     <?php
     set_query_var('scritta_che_scorre', $secondaScrittaCheScorre);
     get_template_part('template-part/rolling-text') ?>
     <!-- SCRITTA CHE CORRE END -->
+
+    <!-- CAROSELLO CLIENTI -->
+    <?php if (!empty($loghiClienti)) { ?>
+        <section class=" testimonial-one">
+            <div class="container">
+                <div class="pbmit-heading-subheading text-center animation-style2 mb-4">
+                    <h2 class="pbmit-title font-bold fs-48 testo-nero-verardi">I clienti che ci hanno scelto</h2>
+                </div>
+                <div class="swiper-slider" data-loop="true" data-autoplay="true" data-dots="true" data-arrows="false" data-columns="5" data-margin="30" data-effect="slide">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($loghiClienti as $logo) { ?>
+
+                            <article class="pbmit-testimonial-style-1 swiper-slide">
+                                <div class="pbminfotech-post-item">
+                                    <img src="<?php echo $logo['logo_cliente'] ?>" class="img-fluid" alt="">
+                                </div>
+                            </article>
+                        <?php } ?>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php } ?>
+    <!-- CAROSELLO CLIENTI END -->
 
 </div>
 <!-- page content End -->

@@ -2765,7 +2765,7 @@
 }
 .pbmit-testimonial-style-1 .pbminfotech-post-item {
 	padding: 50px 40px;
-	background: var(--pbmit-light-color);
+	background: var(--pbmit-white-color);
 }
 .pbmit-testimonial-style-1 blockquote {
 	position: relative;
@@ -2792,6 +2792,8 @@
 }
 .pbmit-bg-color-light .pbmit-testimonial-style-1 .pbminfotech-post-item {
 	background: var(--pbmit-white-color);
+	display: flex;
+	justify-content: center;
 }
 /** Style 2 **/
 .pbmit-testimonial-style-2 blockquote {

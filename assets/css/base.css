@@ -695,7 +695,7 @@ ul.pbmit-contact-info {
 	margin: 0 !important;
 	opacity: 0.5;
 	margin-right: 10px !important;
-	background: var(--pbmit-secondary-color);
+	background: var(--pbmit-blackish-color);
 }
 .pbmit-bg-color-secondary .swiper-pagination-bullet {
 	background: rgb(255, 255, 255, 0.5);
@@ -713,10 +713,10 @@ ul.pbmit-contact-info {
 }
 .swiper-pagination-bullet-active {
 	opacity: 1;
-	background-color: var(--pbmit-secondary-color);
+	background-color: var(--pbmit-global-color);
 }
 .pbmit-bg-color-secondary .swiper-pagination-bullet-active {
-	background-color: var(--pbmit-white-color);
+	background-color: var(--pbmit-global-color);
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {

@@ -8,7 +8,7 @@
     <title><?php wp_title(' | ', true, 'right'); ?></title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo TEMPPATH; ?>/assets/images/verardi/favicon.png">
 
     <?php wp_head() ?>
 </head>
