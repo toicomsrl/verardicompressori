@@ -42,33 +42,33 @@
                             <div class="widget">
                                 <h2 class="widget-title">Compressori</h2>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/compressori-industriali/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Compressori industriali</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/compressori-industriali/compressori-a-vite/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Compressori a vite Elgi</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/compressori-industriali/compressori-oil-free/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Compressori oil-free Elgi</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="">
+                                    <a href="<?php echo HOME; ?>/compressori-aria-brescia/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Compressori aria a Brescia</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/compressori-aria-bergamo/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
-                                        <span>Compressori aria a Beramo</span>
+                                        <span>Compressori aria a Bergamo</span>
                                     </a>
                                 </div>
                             </div>
@@ -77,13 +77,13 @@
                             <div class="widget">
                                 <h2 class="widget-title">Essiccatori</h2>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/essiccatori/essiccatori-ad-assorbimento/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
-                                        <span>Essiccatori ad adsorbimento</span>
+                                        <span>Essiccatori ad assorbimento</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/essiccatori/essicatori-a-refrigerazione/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Essiccatori a refrigerazione</span>
                                     </a>
@@ -94,31 +94,31 @@
                             <div class="widget">
                                 <h2 class="widget-title">Altri prodotti</h2>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/serbatoi-aria-compressa/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Serbatoi aria compressa</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/trattamento-aria-condensa/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Trattamento aria e condensa</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/filtrazione-aria-compressa/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Filtrazione aria compressa</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/separatori-acqua-olio/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Separatori acqua e olio</span>
                                     </a>
                                 </div>
                                 <div class="footer-menu-item">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/strumenti-di-misurazione/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                         <span>Strumenti di misurazione</span>
                                     </a>

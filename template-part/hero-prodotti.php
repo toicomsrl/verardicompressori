@@ -3,7 +3,6 @@
     <div class="container">
         <div class="pbmit-title-bar-content" style="min-height: 240px;">
             <div class="pbmit-title-bar-content-inner">
-                <h1 class="pbmit-tbar-title"></h1>
             </div>
         </div>
     </div>

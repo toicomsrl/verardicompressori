@@ -17,7 +17,7 @@ $scrittaCheScorre = get_field('assistenza_scritta_che_scorre');
     <div class="container">
         <div class="pbmit-title-bar-content">
             <div class="pbmit-title-bar-content-inner">
-                <h1 class="pbmit-tbar-title"><?php echo $titolo; ?></h1>
+                <h2 class="pbmit-tbar-title"><?php echo $titolo; ?></h2>
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@ $scrittaCheScorre = get_field('assistenza_scritta_che_scorre');
     <div class="container">
         <div class="row testo">
             <div class="col-12">
-                <h2><?php echo $primoSottotitolo; ?></h2>
+                <h1><?php echo $primoSottotitolo; ?></h1>
                 <p><?php echo $primoTesto ?></p>
             </div>
         </div>

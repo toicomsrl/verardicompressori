@@ -8,7 +8,7 @@ $immagine = get_field('azienda_immagine_introduzione');
     <div class="container">
         <div class="pbmit-title-bar-content">
             <div class="pbmit-title-bar-content-inner">
-                <h1 class="pbmit-tbar-title"><?php echo $titolo; ?></h1>
+                <h2 class="pbmit-tbar-title"><?php echo $titolo; ?></h2>
             </div>
         </div>
     </div>

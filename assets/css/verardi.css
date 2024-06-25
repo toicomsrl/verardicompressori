@@ -178,6 +178,10 @@
 	margin-left: 10px;
 }
 
+.footer-menu-item span:hover {
+	color: var(--pbmit-global-color);
+}
+
 /* PAGINA ASSISTENZA */
 .assistenza-sezione-icone,
 .monitoraggio-sezione-icone {
@@ -203,7 +207,7 @@
 }
 .prodotti-titolo {
 	text-align: center;
-	color: #323232;
+	color: #000;
 	font-weight: bold;
 	padding-block: 20px;
 }
@@ -270,7 +274,8 @@ h3.sottotitolo-prodotti {
 	background-color: var(--pbmit-light-color);
 }
 
-.testo h2 {
+.testo h2,
+.testo h1 {
 	font-weight: bold;
 	font-size: calc(2rem + 1.5vw);
 	color: #000;
