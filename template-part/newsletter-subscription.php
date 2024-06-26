@@ -3,7 +3,7 @@
         <div class="row g-0">
             <div class="col-md-6">
                 <div>
-                    <h2 class="pbmit-title fs-48 font-bold">Iscriviti alla newsletter</h2>
+                    <div class="pbmit-title fs-48 font-bold">Iscriviti alla newsletter</div>
                     <p>Rimani aggiornato sulle nostre novità</p>
                 </div>
             </div>

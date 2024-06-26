@@ -3,7 +3,7 @@
         <div class="row g-0">
             <div class="col-md-4 contact-us-col1">
                 <div class="pbmit-heading-subheading">
-                    <h2 class="pbmit-title fs-48 font-bold">Richiedi informazioni</h2>
+                    <div class="pbmit-title fs-48 font-bold">Richiedi informazioni</div>
                     <p>Compila il form o chiamaci per qualsiasi informazione o per fissare un appuntamento</p>
                     <div class="box-telefono">
                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/icona-telefono.png" alt="">

@@ -34,7 +34,7 @@ $loghiRivenditoriUfficiali = get_field('home_rivenditori_ufficiali');
                         <div class="row">
                             <div class="col-12">
                                 <div class="pbmit-slider-content">
-                                    <h1 class="pbmit-title transform-left transform-delay-2 font-bold text-center"><?php echo $testoSopraVideo; ?></h1>
+                                    <div class="pbmit-title transform-left transform-delay-2 font-bold text-center"><?php echo $testoSopraVideo; ?></div>
 
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ $loghiRivenditoriUfficiali = get_field('home_rivenditori_ufficiali');
         <div class="container">
             <div class="row testo">
                 <div class="col-12">
-                    <h2><?php echo $primoSottotitolo; ?></h2>
+                    <h1><?php echo $primoSottotitolo; ?></h1>
                     <p><?php echo $primoTesto ?></p>
                 </div>
                 <div class="col-12">
@@ -221,7 +221,7 @@ $loghiRivenditoriUfficiali = get_field('home_rivenditori_ufficiali');
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slider" data-arrows-class="team-three-arrow" data-loop="false" data-autoplay="false" data-dots="false" data-arrows="false" data-columns="4" data-margin="30" data-effect="slide">
+                <div class="swiper-slider" data-arrows-class="team-three-arrow" data-loop="true" data-autoplay="true" data-dots="true" data-arrows="false" data-columns="4" data-margin="30" data-effect="slide">
                     <div class="swiper-wrapper">
                         <!-- Slide1 -->
                         <?php foreach ($loghiRivenditoriUfficiali as $logo) { ?>

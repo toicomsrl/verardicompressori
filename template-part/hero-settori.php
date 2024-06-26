@@ -8,7 +8,7 @@ $immagine = get_field('settori_immagine_testata');
     <div class="container">
         <div class="pbmit-title-bar-content">
             <div class="pbmit-title-bar-content-inner">
-                <h2 class="pbmit-tbar-title"><?php echo $titolo; ?></h2>
+                <h1 class="pbmit-tbar-title"><?php echo $titolo; ?></h1>
             </div>
         </div>
     </div>

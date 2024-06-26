@@ -40,7 +40,7 @@
                         </div>
                         <div class="col-md-3 pbmit-footer-widget-col-2">
                             <div class="widget">
-                                <h2 class="widget-title">Compressori</h2>
+                                <div class="widget-title">Compressori</div>
                                 <div class="footer-menu-item">
                                     <a href="<?php echo HOME; ?>/compressori-industriali/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
@@ -75,7 +75,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="widget">
-                                <h2 class="widget-title">Essiccatori</h2>
+                                <div class="widget-title">Essiccatori</div>
                                 <div class="footer-menu-item">
                                     <a href="<?php echo HOME; ?>/essiccatori/essiccatori-ad-assorbimento/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
@@ -92,7 +92,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="widget">
-                                <h2 class="widget-title">Altri prodotti</h2>
+                                <div class="widget-title">Altri prodotti</div>
                                 <div class="footer-menu-item">
                                     <a href="<?php echo HOME; ?>/serbatoi-aria-compressa/">
                                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">

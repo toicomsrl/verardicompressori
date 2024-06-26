@@ -38,14 +38,14 @@
                         <div class="container-fluid">
                             <div class="pbmit-header-content d-flex align-items-center justify-content-between">
                                 <div class="site-branding">
-                                    <h1 class="site-title">
+                                    <div class="site-title">
                                         <a href="index.html">
                                             <?php
                                             if (function_exists('the_custom_logo')) {
                                                 the_custom_logo();
                                             } ?>
                                         </a>
-                                    </h1>
+                                    </div>
                                 </div>
                                 <div class="pbmit-menuarea d-flex align-items-center">
                                     <div class="site-navigation">

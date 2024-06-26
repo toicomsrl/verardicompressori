@@ -17,7 +17,7 @@ $scrittaCheScorre = get_field('assistenza_scritta_che_scorre');
     <div class="container">
         <div class="pbmit-title-bar-content">
             <div class="pbmit-title-bar-content-inner">
-                <h2 class="pbmit-tbar-title"><?php echo $titolo; ?></h2>
+                <div class="pbmit-tbar-title"><?php echo $titolo; ?></div>
             </div>
         </div>
     </div>
@@ -40,8 +40,6 @@ $scrittaCheScorre = get_field('assistenza_scritta_che_scorre');
         <div class="container">
             <div class="pbmit-element-split-slide-style-1">
                 <div class="pbmit-heading-subheading animation-style2">
-                    <h4 class="pbmit-subtitle"></h4>
-                    <h2 class="pbmit-title"></h2>
                 </div>
                 <div class="pbmit-element-split-slide-wrapper">
                     <div class="pbmit-bg-imgbox d-flex">

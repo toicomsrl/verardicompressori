@@ -6,9 +6,9 @@
             <div class="swiper-wrapper">
                 <article class="pbmit-marquee-effect-style-1 swiper-slide">
                     <div class="pbmit-tag-wrapper">
-                        <h2 class="pbmit-element-title">
+                        <div class="pbmit-element-title">
                             <?php echo $scrittaCheScorre ?>
-                        </h2>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -17,9 +17,9 @@
             <div class="swiper-wrapper">
                 <article class="pbmit-marquee-effect-style-1 swiper-slide">
                     <div class="pbmit-tag-wrapper">
-                        <h2 class="pbmit-element-title">
+                        <div class="pbmit-element-title">
                             <?php echo $scrittaCheScorre ?>
-                        </h2>
+                        </div>
                     </div>
                 </article>
             </div>
