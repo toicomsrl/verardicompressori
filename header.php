@@ -39,12 +39,10 @@
                             <div class="pbmit-header-content d-flex align-items-center justify-content-between">
                                 <div class="site-branding">
                                     <div class="site-title">
-                                        <a href="index.html">
-                                            <?php
-                                            if (function_exists('the_custom_logo')) {
-                                                the_custom_logo();
-                                            } ?>
-                                        </a>
+                                        <?php
+                                        if (function_exists('the_custom_logo')) {
+                                            the_custom_logo();
+                                        } ?>
                                     </div>
                                 </div>
                                 <div class="pbmit-menuarea d-flex align-items-center">

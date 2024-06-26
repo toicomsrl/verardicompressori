@@ -25,27 +25,35 @@ get_template_part('template-part/hero-settori');
                                     <div class="pbmit-ihbox-style-5">
                                         <div class="pbmit-ihbox-contents">
                                             <h2 class="pbmit-element-title">
-                                                <a href="<?php echo $item["ancora"] == '#' ? $item["link"] : $item["ancora"]; ?>">
-                                                    <span>
-                                                        <?php echo $item["testo_link"]; ?>
-                                                        <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19" viewBox="0 0 19 19" xml:space="preserve">
-                                                            <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
-                                                            <line x1="1.2" y1="1" x2="18" y2="1"></line>
-                                                            <line x1="18" y1="17.8" x2="18" y2="1"></line>
-                                                        </svg>
-                                                    </span>
-                                                </a>
+                                                <?php if (isset($item["ancora"])) { ?>
+                                                    <a href="<?php echo $item["ancora"] == '#' ? $item["link"] : $item["ancora"]; ?>">
+                                                    <?php } else { ?>
+                                                        <a href="<?php echo $item["link"]; ?>">
+                                                        <?php } ?>
+                                                        <span>
+                                                            <?php echo $item["testo_link"]; ?>
+                                                            <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19" viewBox="0 0 19 19" xml:space="preserve">
+                                                                <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
+                                                                <line x1="1.2" y1="1" x2="18" y2="1"></line>
+                                                                <line x1="18" y1="17.8" x2="18" y2="1"></line>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
                                             </h2>
                                             <div class="pbmit-ihbox-btn">
-                                                <a href="<?php echo $item["ancora"] == '#' ? $item["link"] : $item["ancora"]; ?>">
-                                                    <span>
-                                                        <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19" viewBox="0 0 19 19" xml:space="preserve">
-                                                            <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
-                                                            <line x1="1.2" y1="1" x2="18" y2="1"></line>
-                                                            <line x1="18" y1="17.8" x2="18" y2="1"></line>
-                                                        </svg>
-                                                    </span>
-                                                </a>
+                                                <?php if (isset($item["ancora"])) { ?>
+                                                    <a href="<?php echo $item["ancora"] == '#' ? $item["link"] : $item["ancora"]; ?>">
+                                                    <?php } else { ?>
+                                                        <a href="<?php echo $item["link"]; ?>">
+                                                        <?php } ?>
+                                                        <span>
+                                                            <svg class="pbmit-svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19" height="19" viewBox="0 0 19 19" xml:space="preserve">
+                                                                <line x1="1" y1="18" x2="17.8" y2="1.2"></line>
+                                                                <line x1="1.2" y1="1" x2="18" y2="1"></line>
+                                                                <line x1="18" y1="17.8" x2="18" y2="1"></line>
+                                                            </svg>
+                                                        </span>
+                                                        </a>
                                             </div>
                                         </div>
                                         <div class="pbmit-ihbox-wapper"></div>
