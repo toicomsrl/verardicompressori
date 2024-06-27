@@ -10,12 +10,16 @@
     <?php get_template_part('template-part/newsletter-subscription'); ?>
     <div class="pbmit-footer-main-area">
         <div class="container">
-            <div class="logo-footer" style="margin-top: 80px; margin-bottom: 50px; text-align: left">
-                <?php
-                if (function_exists('the_custom_logo')) {
-                    the_custom_logo();
-                }
-                ?>
+            <div class="pbmit-footer-widget-area">
+                <div class="container">
+                    <div class="logo-footer" style="margin-top: 80px; margin-bottom: 50px; text-align: left">
+                        <?php
+                        if (function_exists('the_custom_logo')) {
+                            the_custom_logo();
+                        }
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -31,7 +35,7 @@
                                     <li>Email: info@verardicompressori.it</li>
                                 </ul>
                                 <div class="footer-menu-item" style="margin-top: 50px;">
-                                    <a href="#">
+                                    <a href="<?php echo HOME; ?>/wp-content/uploads/2024/06/politica-per-la-qualita.pdf">
                                         <span class="font-bold" style="margin-right: 10px; margin-left: 0" ;>Qualità</span>
                                         <img src=" <?php echo TEMPPATH; ?>/assets/images/verardi/arrow-red.png" alt="">
                                     </a>

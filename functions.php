@@ -28,17 +28,20 @@ function verardi_register_menus()
 }
 add_action('after_setup_theme', 'verardi_register_menus');
 
+//Definizione percorsi
 define('TEMPPATH', get_template_directory_uri());
 define('TEMPDIR', get_template_directory());
 define('HOME', get_home_url());
-
 define('IMAGES', TEMPPATH . '/assets/imgs');
+
 
 add_filter('show_admin_bar', '__return_false');
 add_filter('xmlrpc_enabled', '__return_false');
 
+//Aggiunga supporto per le immagini in evidenza
 add_theme_support('post-thumbnails');
 
+//Aggiunta walker per menu
 require_once get_template_directory() . '/inc/walker.php';
 
 function verardi_assets()
@@ -82,3 +85,11 @@ function verardi_assets()
     wp_enqueue_script('verardi_script', TEMPPATH . '/script.js', array(), false, true);
 }
 add_action('wp_enqueue_scripts', 'verardi_assets');
+
+//Aggiunta funzionalità per caricamento SVG
+function add_svg_to_upload_mimes($mimes)
+{
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'add_svg_to_upload_mimes');

@@ -532,7 +532,9 @@ ul.pbmit-contact-info {
 }
 .site-header {
 	z-index: 999;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .site-header .site-branding img {
 	max-width: 100%;
@@ -560,7 +562,7 @@ ul.pbmit-contact-info {
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.5px;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	font-style: normal;
 	color: var(--pbmit-blackish-color);
 	font-family: var(--pbmit-heading-typography-font-family);

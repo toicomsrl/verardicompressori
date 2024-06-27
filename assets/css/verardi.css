@@ -84,6 +84,19 @@
 .testo-sinistra {
 	text-align: left !important;
 }
+
+/* MENU PRINCIPALE BURGER*/
+.pbmit-header-overlay {
+	position: fixed !important;
+}
+
+#menu-menu-principale a:hover {
+	color: var(--pbmit-global-color) !important;
+}
+
+#menu-menu-principale .pbmit-base-icon-angle-right:hover {
+	color: var(--pbmit-global-color) !important;
+}
 /* MENU SECONDARIO */
 
 .pbmit-contact-info ul li a {

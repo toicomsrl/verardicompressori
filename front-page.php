@@ -233,13 +233,13 @@ $loghiRivenditoriUfficiali = get_field('home_rivenditori_ufficiali');
                                                 <img src="<?php echo $logo['logo']; ?>" class="img-fluid" alt="">
                                             </div>
                                         </div>
-                                        <hr style="margin-bottom: 50px">
+                                        <!--<hr style="margin-bottom: 50px">
                                         <div class="pbmit-team-title-wapper">
                                             <h3 class="pbmit-team-title font-uppercase font-bold testo-nero-verardi text-center">
                                                 <?php echo $logo['titolo']; ?>
                                             </h3>
                                             <p class="text-center"><?php echo $logo['sottotitolo']; ?></p>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </article>

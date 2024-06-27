@@ -87,7 +87,7 @@ $boxes = get_field('monitoraggio_boxes');
                             <?php foreach ($boxes as $box) { ?>
                                 <div class="pbmit-ptable-col col-lg-4 col-md-6 bordo-destra">
                                     <div class="pbmit-pricing-table-box testo-sinistra">
-                                        <div class="pbminfotech-ptable-price-w mb-5">
+                                        <div class="pbminfotech-ptable-price-w mb-5" style="display: flex; justify-content: center">
                                             <img src="<?php echo $box['icona']; ?>" alt="">
                                         </div>
                                         <div class="mt-5">
