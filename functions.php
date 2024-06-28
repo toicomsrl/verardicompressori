@@ -93,3 +93,29 @@ function add_svg_to_upload_mimes($mimes)
     return $mimes;
 }
 add_filter('upload_mimes', 'add_svg_to_upload_mimes');
+
+//Redirect 404
+function redirect404()
+{
+    global $wp_query;
+    if ($wp_query->is_404) {
+        wp_redirect(HOME . '/pagina-non-trovata/', 301);
+        exit;
+    }
+}
+add_action('template_redirect', 'redirect404', 1);
+
+//Redirect alla pagina contatti-ok alla compilazione del form
+function custom_redirect_cf7()
+{
+?>
+    <script type="text/javascript">
+        document.addEventListener('wpcf7mailsent', function(event) {
+            if ('131' == event.detail.contactFormId || '433' == event.detail.contactFormId) {
+                location = '<?php echo HOME ?>/contatti-ok/';
+            }
+        }, false);
+    </script>
+<?php
+}
+add_action('wp_footer', 'custom_redirect_cf7');

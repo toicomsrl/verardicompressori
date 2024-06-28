@@ -768,7 +768,7 @@ body {
 		right: 50px;
 	}
 	.header-style-1 .pbmit-main-header-area {
-		background-color: var(--pbmit-global-color);
+		background-color: #000;
 		padding-inline: 20px;
 	}
 	.header-style-1 .site-branding .logo-img {
