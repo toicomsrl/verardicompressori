@@ -31,8 +31,8 @@
                                 <ul>
                                     <li>Via I Maggio Traversa IV 1/3</li>
                                     <li>25035 Ospitaletto (BS)</li>
-                                    <li>Tel: 030 642841</li>
-                                    <li>Email: info@verardicompressori.it</li>
+                                    <li>Tel: <a href="tel:+39030642841">030 642841</a> </li>
+                                    <li>Email: <a href="mailto:info@verardicompressori.it">info@verardicompressori.it</a> </li>
                                 </ul>
                                 <div class="footer-menu-item" style="margin-top: 50px;">
                                     <a href="<?php echo HOME; ?>/wp-content/uploads/2024/06/politica-per-la-qualita.pdf">

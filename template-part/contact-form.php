@@ -7,7 +7,7 @@
                     <p>Compila il form o chiamaci per qualsiasi informazione o per fissare un appuntamento</p>
                     <div class="box-telefono">
                         <img src="<?php echo TEMPPATH; ?>/assets/images/verardi/icona-telefono.png" alt="">
-                        <span>030 642841</span>
+                        <span><a href="tel:+39030642841">030 642841</a></span>
                     </div>
                 </div>
             </div>

@@ -29,7 +29,7 @@ $orari = get_field('verardi_orari', 'option');
                             <h2 class="pbmit-element-title testo-nero-verardi">
                                 Scrivici
                             </h2>
-                            <div class="pbmit-heading-desc testo-nero-verardi"><?php echo $mail; ?></div>
+                            <div class="pbmit-heading-desc testo-nero-verardi"><a class="testo-nero-verardi" href=" mailto:<?php echo $mail; ?>"><?php echo $mail; ?></a></div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ $orari = get_field('verardi_orari', 'option');
                             <h2 class="pbmit-element-title testo-nero-verardi">
                                 Chiamaci
                             </h2>
-                            <div class="pbmit-heading-desc testo-nero-verardi">Telefono: <?php echo $telefono; ?> <br> Fax: <?php echo $fax; ?></div>
+                            <div class="pbmit-heading-desc testo-nero-verardi">Telefono: <a class="testo-nero-verardi" href="tel:+39<?php echo $telefono; ?>"><?php echo $telefono; ?></a> <br> Fax: <?php echo $fax; ?></div>
                         </div>
                     </div>
                 </div>

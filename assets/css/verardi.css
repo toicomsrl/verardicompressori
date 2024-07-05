@@ -144,6 +144,10 @@
 
 /* SEZIONE FOOTER FORM CONTATTO */
 
+#form-info .contact-us-col1 {
+	z-index: 999999999 !important;
+}
+
 .contact-form-section {
 	background: #323232;
 }
