@@ -10,6 +10,19 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo TEMPPATH; ?>/assets/images/verardi/favicon.png">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H867RFNKJY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H867RFNKJY');
+    </script>
+
     <?php wp_head() ?>
 </head>
 
