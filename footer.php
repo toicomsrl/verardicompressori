@@ -138,7 +138,42 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="pbmit-footer-copyright-text-area">
-                                    VERARDI GROUP SRL | P.iva01057560177 | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a> | Credits
+                                    VERARDI GROUP SRL | P.iva01057560177 | <a href="https://www.iubenda.com/privacy-policy/94640867" class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe ">Privacy Policy</a>
+                                    <script type="text/javascript">
+                                        (function(w, d) {
+                                            var loader = function() {
+                                                var s = d.createElement("script"),
+                                                    tag = d.getElementsByTagName("script")[0];
+                                                s.src = "https://cdn.iubenda.com/iubenda.js";
+                                                tag.parentNode.insertBefore(s, tag);
+                                            };
+                                            if (w.addEventListener) {
+                                                w.addEventListener("load", loader, false);
+                                            } else if (w.attachEvent) {
+                                                w.attachEvent("onload", loader);
+                                            } else {
+                                                w.onload = loader;
+                                            }
+                                        })(window, document);
+                                    </script> | <a href="https://www.iubenda.com/privacy-policy/94640867/cookie-policy" class="iubenda-nostyle no-brand iubenda-noiframe iubenda-embed iubenda-noiframe ">Cookie Policy</a>
+                                    <script type="text/javascript">
+                                        (function(w, d) {
+                                            var loader = function() {
+                                                var s = d.createElement("script"),
+                                                    tag = d.getElementsByTagName("script")[0];
+                                                s.src = "https://cdn.iubenda.com/iubenda.js";
+                                                tag.parentNode.insertBefore(s, tag);
+                                            };
+                                            if (w.addEventListener) {
+                                                w.addEventListener("load", loader, false);
+                                            } else if (w.attachEvent) {
+                                                w.attachEvent("onload", loader);
+                                            } else {
+                                                w.onload = loader;
+                                            }
+                                        })(window, document);
+                                    </script> | <a href="https://toicom.it" target="_blank">Credits</a>
+
                                 </div>
                             </div>
                         </div>
@@ -154,7 +189,7 @@
 <!-- page wrapper End -->
 
 <!-- Search Box Start Here -->
-<div class="pbmit-search-overlay">
+<div class=" pbmit-search-overlay">
     <div class="pbmit-icon-close">
         <svg class="qodef-svg--close qodef-m" xmlns="http://www.w3.org/2000/svg" width="28.163" height="28.163" viewBox="0 0 26.163 26.163">
             <rect width="36" height="1" transform="translate(0.707) rotate(45)"></rect>
